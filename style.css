@@ -1,0 +1,328 @@
+
+/*Estilos gerias*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /*font-family: Arial, Helvetica, sans-serif;*/
+}
+body{
+    background-color: black;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+h2.titulo{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+h2.titulo span{
+    color: #00ff08;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+/*Logo Nome*/
+.text a{
+    font-size: 22px;
+    color: white;
+}
+.text span{
+    color: #00ff08;
+    font-weight: 700;
+}
+/*Header*/
+header{
+    padding: 40px 4%;
+
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(143, 143, 143);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: #ffff;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+
+}
+/*Botao Contactos*/
+.btn-contacto button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-contacto button:hover{
+    box-shadow: 0px 0px 8px #00ff087c;
+    transform: scale(1.05);
+}
+/*Topo do site Conteudo*/
+section.topo-do-site{
+    padding: 40px 4%;
+
+}
+
+.flex{
+    display: flex;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo-do-site h1{
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+
+}
+.topo-do-site h1 span{
+    color: #00ff08;
+}
+.topo-do-site .txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+
+}
+
+/*EFEITOS DA IMAGEM*/
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top:0;
+
+    }
+     100%{
+        top: 30px;
+     }
+}
+
+/*Especilaidades*/
+section.especialaidades{
+    padding: 40px 4%;
+
+}
+section.especialaidades .flex{
+    gap: 60px;
+}
+.especialaidades .especalidaddes-box{
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+  
+    
+}
+.especialaidades .especalidaddes-box:hover {
+    box-shadow: 0 0 20px #00ff087c;
+}
+
+.especialaidades .especalidaddes-box i{
+    font-size: 70px;
+    color: #00ff08;
+}
+.especialaidades .especalidaddes-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+
+}
+
+/*Estilo de Sobre*/
+section.sobre{
+    padding: 70px 4%;
+
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .txt-sobre{
+    color: white;
+
+}
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+
+}
+.sobre .txt-sobre h2 span {
+    color: #00ff08;
+    display: block;
+}
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00ff08;
+    font-size: 20px;
+    margin: 0 2px;
+    transition: 1s;
+}
+.sobre .txt-sobre .btn-social button:hover{
+    box-shadow: 0px 0px 8px;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+ /*Esctilo de Projectos*/
+ section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.068);
+    
+ }
+ section.portifolio .flex{
+    justify-content: space-around;
+    padding: 70px 4%;
+ }
+ .img-port{
+    width: 360px;
+    height: 460px;
+    background-color: #00ff08;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 10s;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+ }
+ .img-port:hover{
+    background-position: 100% 100%;
+ }
+ .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000ad;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+ }
+ .overlay:hover{
+    opacity: 1;
+ }
+ /*Bloco de Fomulario contacto!*/
+ section.formulario{
+    padding: 80px 4%;
+
+ }
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+
+}
+form input, form textarea{
+    width: 100%;
+    background-color: rgb(39, 39, 39);
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+}
+form input::placeholder{
+    color: rgb(104, 104, 104);
+}
+form textarea{
+    resize: none;
+   height: 200px;
+
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+
+}
+form .btn-enviar input{
+    width: 200px;
+    background-color: #00ff08;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 2s;
+    
+}
+form .btn-enviar input:hover{
+box-shadow: 0px 0px 8px;
+    transform: scale(1.05);
+}
+/*Estilo de Rodape*/
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px rgba(44, 44, 44, 0.349);
+}
+footer .flex{
+    justify-content: space-between;
+    
+}
+footer .line-footer{
+    padding: 20px 0;
+    
+}
+.borda{
+ border-top: 2px solid #00ff08
+}
+footer .line-footer p i{
+    color: #00ff08;
+    font-size: 22px;
+}
+footer .line-footer  p a{
+    color: rgb(255, 255, 255);
+}
+footer .logo-footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+
+}
+footer .logo-footer span{
+    color: #00ff08;
+}
